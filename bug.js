@@ -1,0 +1,1 @@
+This error occurs when using the `Dimensions` API in React Native to get screen dimensions.  The `Dimensions.get('window')` call returns an object with `width` and `height` properties. However, if these values are unexpectedly 0, it indicates that the layout hasn't fully rendered yet.  This is a common problem during the component's mounting phase.
