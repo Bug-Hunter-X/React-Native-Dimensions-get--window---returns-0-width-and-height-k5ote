@@ -1,0 +1,3 @@
+# React Native Dimensions.get('window') returns 0 width and height
+
+This repository demonstrates a common issue in React Native where `Dimensions.get('window')` returns 0 for width and height.  This happens because the dimensions are accessed before the layout has fully rendered. The solution involves using `useEffect` hook and checking if the dimensions are still 0. If they are 0, the component re-renders until valid dimensions are obtained.
